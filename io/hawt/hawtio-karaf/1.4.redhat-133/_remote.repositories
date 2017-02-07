@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Feb 05 19:57:39 CET 2017
+hawtio-karaf-1.4.redhat-133-features.xml>karaf-default=
+hawtio-karaf-1.4.redhat-133-features.xml>fusepublic=
+hawtio-karaf-1.4.redhat-133-features.xml>jbossreleases=

@@ -1,0 +1,12 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jan 30 13:53:47 ICT 2017
+https\://maven.repository.redhat.com/earlyaccess/all/.error=
+https\://repository.jboss.org/nexus/content/groups/ea/.lastUpdated=1485759227738
+https\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1485759186391
+https\://repository.jboss.org/nexus/content/groups/ea/.error=
+https\://maven.repository.redhat.com/ga/.lastUpdated=1485759144675
+https\://repo.maven.apache.org/maven2/.lastUpdated=1485758939148
+https\://repo.maven.apache.org/maven2/.error=
+https\://maven.repository.redhat.com/ga/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1485758939641
+http\://repo1.maven.org/maven2/.error=

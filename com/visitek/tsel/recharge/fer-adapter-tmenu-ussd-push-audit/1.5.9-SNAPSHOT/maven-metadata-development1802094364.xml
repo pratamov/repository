@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>com.visitek.tsel.recharge</groupId>
+  <artifactId>fer-adapter-tmenu-ussd-push-audit</artifactId>
+  <version>1.5.9-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <buildNumber>2</buildNumber>
+      <timestamp>20141118.114336</timestamp>
+    </snapshot>
+    <lastUpdated>20141118114336</lastUpdated>
+  </versioning>
+</metadata>

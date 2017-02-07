@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="visitek-tsel-recharge.1.5.9"
+          xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+    <repository>mvn:org.apache.karaf.assemblies.features/standard/2.3.0.redhat-60024/xml/features</repository>
+    <repository>mvn:org.apache.karaf.assemblies.features/enterprise/2.3.0.redhat-60024/xml/features</repository>
+    <repository>mvn:org.apache.cxf.karaf/apache-cxf/2.7.10/xml/features</repository>
+    <repository>mvn:org.apache.camel.karaf/apache-camel/2.12.3/xml/features</repository>
+    <repository>mvn:org.apache.activemq/activemq-karaf/5.8.0.redhat-60024/xml/features</repository>
+
+    <feature name="fer-datasource" version="1.5.9"
+             description="VISITEK-TSEL-RECHARGE :: DATASOURCE">
+        <feature version="1.0.1.redhat-60024">transaction</feature>
+        <feature version="1.0.0">jndi</feature>
+        <bundle>wrap:mvn:com.oracle/ojdbc6/11.2.0.3</bundle>
+        <bundle>wrap:mvn:commons-dbcp/commons-dbcp/1.4</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-datasource/1.5.9</bundle>
+    </feature>
+
+    <feature name="fer-vas-provisioning" version="1.5.9"
+             description="VISITEK-TSEL-RECHARGE :: VAS PROVISIONING">
+        <bundle>mvn:com.visitek.tsel.recharge/fer-cdm-rbt-mkios/1.5.9</bundle>
+        <feature version="1.5.9">fer-datasource</feature>
+        <feature version="2.3.0.redhat-60024">war</feature>
+        <feature version="(3.1,4.0]">spring-tx</feature>
+        <feature version="(3.1,4.0]">spring-jdbc</feature>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-util-sequence-generator/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-persistence-rbt-mkios/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-persistence-common/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-persistence-common-map/1.5.9</bundle>
+        <feature version="5.8.0.redhat-60024">activemq-client</feature>
+        <feature version="(3.1,4.0]">spring-jms</feature>
+        <feature version="2.12.3">camel-jms</feature>
+        <bundle>mvn:joda-time/joda-time/2.3</bundle>
+        <bundle>mvn:id.co.visitek.tsel.esb.common.audit/audit-client/1.1.2</bundle>
+        <bundle>mvn:id.co.visitek.tsel.esb.common.audit/audit-util/1.1.2</bundle>
+        <bundle>wrap:mvn:id.co.visitek.tsel.esb.common.util/esb-util-general/1.0.1</bundle>
+        <bundle>mvn:id.co.visitek.tsel.esb.common.audit/audit-model/1.1.2</bundle>
+        <bundle>mvn:id.co.visitek.tsel.esb.common.audit/audit-client-jms/1.1.2</bundle>
+        <bundle>mvn:id.co.visitek.common.util/util-general/1.0.0</bundle>
+        <bundle>wrap:mvn:commons-io/commons-io/2.4</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-audit/1.5.9</bundle>
+        <feature version="2.7.10">cxf-jaxws</feature>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-adapter-eluon-prov-rbt/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-adapter-eluon-prov-rbt-audit/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-adapter-mkios-recharge/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-adapter-tmenu-ussd-push/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-adapter-tmenu-ussd-push-audit/1.5.9</bundle>
+        <bundle>wrap:mvn:org.apache.httpcomponents/httpclient/4.1.1</bundle>
+        <bundle>wrap:mvn:org.apache.httpcomponents/httpcore/4.1</bundle>
+        <bundle>wrap:mvn:commons-codec/commons-codec/1.4</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-adapter-smsgw-sms-send/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-security-auth/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-security-auth-vas-prov/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-security-auth-rbt-prov/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-security-auth-ussd-reply/1.5.9</bundle>
+        <feature version="2.12.3">camel-blueprint</feature>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-route-rbt-mkios/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-provider-vas-prov/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-provider-ussd-reply/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-provider-rbt-prov/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-provider-vas-prov-force-complete/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-provider-vas-prov-manual-retry/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-provider-blacklist-ws/1.5.9</bundle>
+        <bundle>mvn:com.visitek.tsel.recharge/fer-provider-vas-prov-manual-rollback/1.5.9</bundle>
+    </feature>
+</features>

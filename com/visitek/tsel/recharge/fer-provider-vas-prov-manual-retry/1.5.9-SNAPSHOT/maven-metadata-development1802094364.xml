@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>com.visitek.tsel.recharge</groupId>
+  <artifactId>fer-provider-vas-prov-manual-retry</artifactId>
+  <version>1.5.9-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <buildNumber>1</buildNumber>
+      <timestamp>20141118.114351</timestamp>
+    </snapshot>
+    <lastUpdated>20141118114351</lastUpdated>
+  </versioning>
+</metadata>
